@@ -14,10 +14,12 @@ const Profile = (props) => {
 	return (
 		<>
 		<Link to="/forum">Go back to forum</Link>
-		<div className="card">
-			<h1>this is post {postContent.id}</h1>
-			<p>{postContent.title}</p>
-			<p>{postContent.body}</p>
+		<div className="row justify-content-center">
+			<div className="col-8">
+				<h1>this is post {postContent.id}</h1>
+				<p>{postContent.title}</p>
+				<p>{postContent.body}</p>	
+			</div>
 		</div>
 		</>	
 	);

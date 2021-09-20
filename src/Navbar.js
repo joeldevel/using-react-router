@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark float-left ">
       <div className="container-fluid">
-        <Link className="navbar-brand" to="#">
+        <Link className="navbar-brand" to="/">
           Floncho
         </Link>
         <button
