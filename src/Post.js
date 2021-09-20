@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {Link} from 'react-router-dom';
 
 const Profile = (props) => {
 	const [postContent, setPostContent] = useState({});
@@ -10,13 +11,15 @@ const Profile = (props) => {
 		.then(postData => setPostContent(postData));
 	}, []);
 
-	//console.log(props.match.params.id);
 	return (
+		<>
+		<Link to="/forum">Go back to forum</Link>
 		<div className="card">
 			<h1>this is post {postContent.id}</h1>
 			<p>{postContent.title}</p>
-			<p>{postContent.text}</p>
-		</div>	
+			<p>{postContent.body}</p>
+		</div>
+		</>	
 	);
 }
 
